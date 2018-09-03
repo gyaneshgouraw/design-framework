@@ -12,9 +12,7 @@
     "type": "git",
     "url": "git://github.com/styleguidist/react-styleguidist.git"
   },
-  "files": [
-    "./dist/*"
-  ],
+
   "main": "./dist/bundle.js",
   "license": "MIT",
   "scripts": {
