@@ -3,14 +3,14 @@
   "description": "React styleguidist basic example",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://github.com/styleguidist/react-styleguidist",
+  "homepage": "https://github.com/gyaneshgouraw/design-framework",
   "author": {
     "name": "Artem Sapegin",
     "url": "http://sapegin.me/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/styleguidist/react-styleguidist.git"
+    "url": "https://github.com/gyaneshgouraw/design-framework"
   },
 
   "main": "./dist/bundle.js",
