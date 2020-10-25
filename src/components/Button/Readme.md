@@ -1,7 +1,7 @@
 Basic button:
 
 ```jsx
-<Button>Push Me</Button>
+<Button type ="primary">Push Me</Button>
 ```
 
 Big pink button:

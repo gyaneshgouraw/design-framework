@@ -6,10 +6,20 @@ import stl from './Button.css';
 /**
  * The only true button.
  */
-export default function Button({ color, size, onClick, disabled, children }) {
+export default function Button({ color, size, onClick, disabled, children, background, type }) {
+	if (type == "primary") {
+		color = "blue"
+	}
+	else if (type == "info") {
+		color = "green"
+	}
+	else if (type == "warn") {
+		color = "orange"
+	}
 	const styles = {
 		color,
 		fontSize: Button.sizes[size],
+		backgroundColor: background
 	};
 
 	return (
@@ -23,8 +33,12 @@ Button.propTypes = {
 	children: PropTypes.node.isRequired,
 	/** The color for the button */
 	color: PropTypes.string,
+	/** The background for the button */
+	background: PropTypes.string,
 	/** The size of the button */
 	size: PropTypes.oneOf(['small', 'normal', 'large']),
+	/** The type of the button */
+	type: PropTypes.oneOf(['primary', 'info', 'warn']),
 	/** Disable button */
 	disabled: PropTypes.bool,
 	/** Gets called when the user clicks on the button */
