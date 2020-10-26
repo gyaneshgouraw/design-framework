@@ -4,8 +4,8 @@ import React, { Component } from 'react';
  * Button that counts how many times it was pressed and exposes a `@public` method to reset itself.
  */
 export default class CounterButton extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
 			value: 0,
 		};
@@ -29,16 +29,17 @@ export default class CounterButton extends Component {
 	 * Increments the counter. This method is not marked @public and is not visible in the styleguide.
 	 */
 	increment() {
+		const { count } = this.props;
 		this.setState({
-			value: this.state.value + 1,
+			value: this.state.value + (count ? count : 1),
 		});
 	}
 
 	render() {
 		return (
-			<button className="button" onClick={this.increment.bind(this)}>
+			<Button className="button" onClick={this.increment.bind(this)}>
 				{this.state.value}
-			</button>
+			</Button>
 		);
 	}
 }
