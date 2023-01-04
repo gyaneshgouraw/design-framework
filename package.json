@@ -33,7 +33,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "file-loader": "^1.1.11",
     "url-loader": "^0.6.2",
-    "@babel/core": "^7.0.0",
+    "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.0",
